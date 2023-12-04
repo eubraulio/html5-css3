@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            Temos algumas pseudo-class como: hover (quando passamos com o mouse), visited (quando os links já foram visitados), active (quando clicamos nele ou selecionamos)
+            »» Os pseudo-elementos elas agem nos seletores de elementos uma vez que mechem no conteúdo de um documento. Elas são representadas por duas vezes dois pontos (::). Os mais utilizados são after, before 
+                »» Como principais propriedades temos o: content:""; (Conteúdo)
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        a:visited{
+            color: darkblue;
+        }
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+        a:active{
+            color: lightblue;
+        }
+        a::after{
+            content:' »';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="hover.html">Repositório GitHub</a></li>
+        <li><a href="hover.html">Canal do Youtube</a></li>
+        <li><a href="hover.html">Site do Cursoemvideo</a></li>
+    </ul>
+</body>
+</html>

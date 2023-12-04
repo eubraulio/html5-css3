@@ -1,0 +1,20 @@
+		              Fontes externas:
+...........................................................................
+
+	Para adicionarmos fontes baixadas na página html, lá no início do style ou 
+sheetstyle, inserimos o seletor/regra '@font-face{}'.
+    
+	Que dentro deste seletor teremos as propriedades: {font-family: ; src: url();} 
+onde no fonte family podes inserir o nome que quisermos, no 'src: url();' inserimos o 
+endereço da fonte e o nome (da mesma forma que esta escrita no arquivo 'com espaço e tudo mais').
+E ainda na propriedade 'src: url()' nós inserimos a virgula no 'url()' e adicionamos o 'format()', 
+onde irá o formato da fonte.
+
+Tipos de formato:
+ -opentype: quando é (otf);
+ -truetype: quando é (ttf);
+ -embedded-opentype;
+ -truetype-aat (o aat significa apple Advanced Typography);
+ -svg.
+
+Obs.: Dentro deste seletor/regra também podemos definir o: font-weight e o font-style.
